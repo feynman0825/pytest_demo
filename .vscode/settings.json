@@ -1,0 +1,54 @@
+{
+    "python.pythonPath": "/Users/feynman/opt/miniconda3/envs/pytest_demo/bin/python",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.maxNumberOfProblems": 100,
+    "python.linting.ignorePatterns": [
+        ".vscode/*.py",
+        "**/site-packages/**/*.py"
+    ],
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyArgs": [
+        "--follow-imports=silent",
+        "--ignore-missing-imports",
+        "--show-column-numbers",
+        "--no-pretty"
+    ],
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "[python]": {
+        "editor.tabSize": 4
+    },
+    "python.autoComplete.extraPaths": [],
+    "python.analysis.extraPaths": [],
+    "python.analysis.packageIndexDepths": [
+        {
+            "name": "sklearn",
+            "depth": 2,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "matplotlib",
+            "depth": 3,
+            "includeAllSymbols": false
+        }
+    ],
+    // For manually running your library code,
+    // it will add the following path to your PATH system variable to
+    // include your module, any of your customized library or code should 
+    // be under this PATH.
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+    },
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unitttestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "jupyter.notebookFileRoot": "${workspaceFolder}/src"
+}

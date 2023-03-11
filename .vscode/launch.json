@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "type": "python",
+            "env": {
+                // set to the package path where it locates
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        }
+    ]
+}
